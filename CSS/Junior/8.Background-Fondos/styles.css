@@ -1,0 +1,60 @@
+body{
+    background-color: #48e;
+    font-family: sans-serif;
+    color: white;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #f3e;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #f3e;
+    /* con esto hacemos que el fondo se convierta en una imagen. */
+    background-image: url("https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg");
+    /* con en esta propiedad digamos si ponemos 100 %se ajusta solo al ancho y no a lo alto.
+    y el contain se adapta al tamano del elemento */
+    background-size: contain;
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #f3e;
+
+    background-image: url("https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg");
+    /* se adapta a la posicion original de la imagen, en este ejemplo me faltaria que sea mas ancha la imagen para verla completa, pero podria usar otra propiedad para centrarla, que seria el background position */
+    background-size: cover;
+    background-position: center;
+}
+
+.boxScroll{
+    width: 100%;
+    height: 100px;
+    margin:20;
+    background-color: aqua;
+    background-image: url("https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg");
+    background-size: cover;
+    background-position: top;
+
+    /* para scrollear y la imagen se siga con el scroll */
+    background-attachment: fixed;
+}
+
+/* y crear en la imagen una capa mas oscura. */
+
+.opaco{
+    width: 100%;
+    height: 100%;
+    background-color: #f003;
+}
+
+/* podemos tambien poner todo en una sola linea que seria 
+BACKGROUND: URL TOP / COVER FIXED COLOR */
+

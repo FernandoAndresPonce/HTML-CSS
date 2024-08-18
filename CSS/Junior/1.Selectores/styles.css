@@ -1,0 +1,27 @@
+
+/* 1. seria selector por elemento, busca el elemento html, y lo modifica. */
+/* P aca seria el selector, el elementos o los elementos que deseamos cambiar. */
+p{
+    /* y aca declaramos los valores, la propiedad que vamos a modificar, y el nuevo valor que le vamos a dar/ */
+    color: red;
+}
+
+h1{
+    color: aliceblue;
+}
+
+li{
+    color: rgb(140, 0, 255);
+}
+
+span{
+    color: black;
+}
+
+.faltante{
+    color: aqua;
+}
+
+#ingrediente-secreto{
+    color: blue;
+}

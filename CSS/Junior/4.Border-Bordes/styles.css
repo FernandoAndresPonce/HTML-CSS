@@ -1,0 +1,25 @@
+div{
+    background-color: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+/* Esto no se hace, pero es para diferenciar los distintos tipo de bordes. */
+div{
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: rgb(76, 0, 255); */
+    /* recien declarando todas las propiedades anteriores definidas, vamos a poder ver el borde, y el style que mas se usa, es el Solid, los demas no se usan */
+
+    /* y esto es lo mismo que lo de arriba, pero en una linea. */
+    /* border: 3px solid rgb(76, 0, 255); */
+
+    /* y para poner solo borde arriba, ponemos lo mismo que recien, pero top, tambien podemos hacerlo con el button, o ambos a la vez, etc */
+    border-top: 3px solid rgb(76, 0, 255);
+
+    /* a su vez tambien existe border button o top o etc, para redondear, uno o todos sus lados. */
+    /* o podemos declararlo como el padding en una sola linea,
+    border-radius : 10px 5px 10px 5px, y va en el sentido de la aguja del reloj; */
+
+    border-radius: 10px;
+}

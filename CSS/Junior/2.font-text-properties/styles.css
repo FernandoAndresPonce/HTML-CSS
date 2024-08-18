@@ -1,0 +1,49 @@
+p{
+    color: blue;
+    /* podemos poner mas de una tipografia, solamente poniendo , y el nuevo font */
+    /* y en el caso tenga dos palabras debemos usar ' font '. */
+    font-family: "Monserrat", Arial, Helvetica; 
+    font-size: 20px;
+    /* luego tenemos la posbilidad de darle un GROSOR  a la fuente, seria como ponerla en negrita. */
+    /* bold es lo mismo que escribir font-weight: 700; y bolder es un paso mas adelante que bold */
+    font-weight: bold;
+
+    /* font-style: italic es inclinada, oblique un poquito menos inclinada. */
+    /*el normal viene por defecto no es necesario ponerlo*/
+    font-style: normal;
+    
+
+    /* decidimos donde se va a empezar a escribir un alinear. */
+    /* el justify , nos ayuda pora que quede todo alineado perfecto*/
+    text-align: justify;
+
+    /*el UNDERLINEA: seria el subrayado
+    OVERLINE: subraya la parte de arriba del texto.
+    LINE-THROUGHT: tacha el texto*/
+    text-decoration:  underline overline;
+
+    /*seria el espacio que hay entre lineas*/
+    line-height: 2;
+
+    /*ESPACIO entre LETRAS*/
+    letter-spacing: 1px;
+
+    /*transforma todo el texto en uppercase  o lowercase o capitalize, que esta lo que hace cada palabra la empiza con MAYUSCULA*/
+    text-transform: none;
+    
+}
+
+span{
+    text-decoration: line-through;
+    color: aqua;
+}
+
+/*le saco el subrayado al linl o ENLACE*/
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+}

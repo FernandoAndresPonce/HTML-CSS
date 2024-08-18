@@ -1,0 +1,23 @@
+.box{
+    
+    width: 200px;
+    height: 100px;
+    background-color: #a7c5fc99 ;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border-top: 4px solid #0b4bc4 ;
+    color: #0b4bc4;
+    font-family: sans-serif;
+    padding: 20px 50px;
+    border-radius: 10px 10px 0 0;
+    
+
+}
+
+/* RGB RED GREEN BLUE ,  y tiene 256 combinaciones para cada uos de los valores, red green blue. y en total tendria 16777216 combinaciones
+
+luego tenemos el HEXADECIMAL, otra forma de dar color y tambien nos permite tener 16777216 combinaciones, y se USA EL #0af 00aaff/
+
+y el CUARTO VALOR EN TODOS ES LA OPACIDAD, HACER LOS COLORES MAS PASTELES O OSCUROS, IMPORTANTEEEEEE!!!!

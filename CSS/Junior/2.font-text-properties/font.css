@@ -1,0 +1,17 @@
+@font-face {
+    /* se puede llamar la familia como deseamos. */
+    font-family: "Monserrat"; 
+    /* .ttf es true type */
+    src: url(fonts/Montserrat-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+
+/* para que tengamos varias alternativas mas o menos gruesa la letra, le daamos diferentes tipos de font-weight para diferenciarlas, y dependiendo el weight cambiara la letra. */
+
+@font-face {
+    /* se puede llamar la familia como deseamos. */
+    font-family: "Monserrat"; 
+    /* .ttf es true type */
+    src: url(fonts/Montserrat-Black.ttf) format("truetype");
+    font-weight: 900;
+}

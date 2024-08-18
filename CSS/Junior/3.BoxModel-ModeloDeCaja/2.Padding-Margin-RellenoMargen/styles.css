@@ -1,0 +1,33 @@
+.formulario{
+    background: red;
+
+    /* padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px; */
+    text-align: center;
+    padding: 30px;
+
+    /* esto seria lo mismo que ponerlos como arriba, va como el sentido de la aguja del reloj. */
+    /* padding: 20px 20px 20px 0; */
+
+}
+.fomrulario_input{
+
+    padding: 6px 10px;
+    width: 90%;   
+    /* CON EL MARGIN SEPADO LAS CAJAS DE CONTENIDO CON LAS DEMAS CAJAS. */
+    margin: 10px; 
+
+}
+h1{
+    text-align: center;
+}
+
+.formulario_submit{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: aqua;
+    width: 50%;
+    text-align: center;
+}
