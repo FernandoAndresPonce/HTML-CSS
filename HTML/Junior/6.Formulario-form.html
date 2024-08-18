@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>  
+    <head>
+        <title>Formulario</title>
+    </head>
+
+    <body>
+        <!-- con esta tag creamos un formulario. -->
+         <!-- y lo usamos cuando el usuario debe completar una serie de datos, o propiamente dicho un formulario -->
+
+
+        <form action="">
+<!-- 
+            los atributos mas importantes de los input son 
+            ~required >> que me exige completar ese elemento.
+            ~name >> darle un nombre  a esa variable.
+            ~placeholder >> es visual, aparece en el txtbox lo que deberiamos escribir
+            ~value >> darle un valor a esa variable
+            ~minlength me exige un minimos de caracteres-->
+            <input type="text" required name="txtnombre">
+            <br>
+            <input type="color">
+            <br>
+            <input type="email" placeholder="ingrese su correo electronico">
+            <br>
+            <input type="password"  minlength="3"> 
+            <br>
+            <input type="checkbox">
+            <br>
+            <input type="radio">
+            <br>
+            <input type="file">
+            <br>
+            <input type="date">
+            <br>
+            <input type="submit" >
+    </form>
+    </body>
+</html>
+

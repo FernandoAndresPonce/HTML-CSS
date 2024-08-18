@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #222;
+    color: #eee;
+}
+
+/* darle el mismo estilo a otro elemento o tags */
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    /* sacamos el borde con el none */
+    border: none;
+    /* y lo ponemos de nuevo con el left */
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #eee;
+    
+}
+
+textarea{
+    min-width: 100%;
+    /* aca solamente me permite mover el textarea hacia abajo. */
+    resize: vertical;
+    min-height: 100px;
+    max-height: 200px;
+    font-family: sans-serif;
+
+}
+
+form{
+    background: transparent;
+    /* IMPORTANTEE me da la posibilidad que el formulario no se extienda al 100% cuando  estiren o agranden la pantalla */
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 0 0 30px 0 #0006;
+    padding: 20px;
+   
+    
+}
+
+h2{
+
+    text-align: center;
+    margin:0;
+    margin-bottom: 20px;
+}
+
+.form_input{
+    padding: 6px 20px;
+}
