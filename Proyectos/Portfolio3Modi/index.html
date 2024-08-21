@@ -28,7 +28,7 @@
 <body>
     <header>
         <a href="#" class="logo"> <img src="img/logo.png" alt="logoPersonal"> </a>
-        <ul class="menu_principal">
+        <ul class="menulist">
             <a href="#home" class="Active">Home</a>
             <a href="#about">About Me</a>
             <a href="#services">Services</a>
@@ -36,8 +36,8 @@
             <a href="#contact">Contact</a>
         </ul>
 
-        <div class="menu_right">
-            <a href="#" class="menu_btn">
+        <div class="menu-right">
+            <a href="#" class="menu-btn">
                 <span>Lets talk</span>
                 <!-- ir a remixicon y copiar la classe de la imagen que querramos. -->
                 <i class="ri-message-3-line"></i>
@@ -45,10 +45,10 @@
 
             <!-- buscar en la pagina box icons>> menu>> ir al font de la imagen >> copiar la class -->
             <div class="bx bx-menu" id="menu-ico"></div>
-            
         </div>
-
     </header>
+            
+
     <!-- ------------------------------------------------------------ -->
     <section class="home" id="home">
         <div class="home-text">
@@ -56,7 +56,7 @@
                 <i class="ri-shining-2-line"></i>
                 <span>This is  Tahmid Ahmed</span>
             </a>
-            <h1>UI / UX and <br> <span>Web Designer.</span></h1>
+            <h1>UI / UX and <br> <span class="input"></span></h1>
             <h4>With +5 years of experience</h4>
             <div class="social-icons">
                 <a href="#"><i class="ri-dribbble-line"></i></a>
@@ -65,6 +65,7 @@
                 <a href="#"><i class="ri-facebook-fill"></i></a>
                 <a href="#"><i class="ri-pinterest-line"></i></a>
             </div>
+            
             <div class="h-btn">
                 <a href="#" class="btn1">
                     My work
@@ -93,7 +94,7 @@
             </a>
             <h2>More <span> About Me</span></h2>
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non at, animi quos voluptate rerum labore sit autem id nobis harum repellendus aperiam culpa quidem, asperiores eaque illo mollitia aspernatur?</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam vel atque ullam tempora! Id, ducimus. A rerum, commodi alias ipsum corporis veniam sit sunt tenetur dolorum, autem ab natus! <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates inventore id earum aliquam accusantium quibusdam, obcaecati explicabo. Eos, omnis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam vel atque ullam tempora! Id, ducimus. A rerum, commodi alias ipsum corporis veniam sit sunt tenetur dolorum, autem ab natus! <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates inventosantium quibusdam, obcaecati explicabo. Eos, omnis.</p>
 
             <div class="h-btn">
                 <a href="#" class="btn1">
@@ -195,7 +196,7 @@
         <form class="contact-form">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Direccion de correo..." required>
-            <textarea name="" id="" cols="30" row="10" placeholder="Write Message here..." required></textarea>
+            <textarea name="" id="" rows="10" cols="10" placeholder="Write Message here..." required></textarea>
             <input type="submit" value="Submit Now" class="submit-btn">
         </form>
       </section>
@@ -208,8 +209,8 @@
             <i class="ri-arrow-up-s-line"></i>
         </a>
      </div>
-
-
+     <!-- https://github.com/mattboldt/typed.js, copia esa libreria para animation -->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- js files -->
     <script src="script.js"></script>
     

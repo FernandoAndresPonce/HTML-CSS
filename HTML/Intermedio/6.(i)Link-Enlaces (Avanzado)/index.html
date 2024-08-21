@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Avanzados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- importantisimo todo!!!! -->
+    <div>
+        <label >Acepto los <a href="terms.html">terminos y condiciones</a>
+            <input type="checkbox" class="checkbox">
+        </label>
+        <div>
+            <a href="PROGRAMACION.docx" download>Descargar Cualuier cosa</a>
+        </div>
+
+        <div>
+            <!-- importante armarlos asi cuando necesitamos enviarlo al usuario hacia otra pagina, no nos puede modificar a la pagina , ni reenviarnos a otro lado, el noopener -->
+            TERMINOS Y CONDICIONES GENERADOS EN
+            <a href="https://bebita.com" rel="noopener" target="_blank"> bebita.com </a>
+        </div>
+
+        <div>
+            <!-- noreferrer, la diferencia ademas de NO  va poder modificar mi panifa, si no que tambien no va a saber de donde vino.-->
+            TERMINOS Y CONDICIONES GENERADOS EN
+            <a href="https://bebita.com" rel="noreferrer" target="_blank"> bebita.com </a>
+        </div>
+
+        <div>
+            <!-- podemos usar los tres a las vez-->
+            TERMINOS Y CONDICIONES GENERADOS EN
+            <a href="https://bebita.com" rel="noreferrer noopener nofollow" target="_blank"> bebita.com </a>
+        </div>
+    </div>
+</body>
+</html>

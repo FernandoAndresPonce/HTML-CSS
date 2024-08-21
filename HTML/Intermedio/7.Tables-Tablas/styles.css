@@ -1,0 +1,28 @@
+td, th{
+    border: 1px solid black;
+    text-align: center;
+    padding: 6px;
+    font-family: sans-serif;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+td{
+    color: #666;
+    
+}
+
+table{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 0 12px #0001;
+    border-spacing: 12px;
+
+}
+
+.total, .monto-total {
+    border: none;
+    font-size: 1.2em;
+}

@@ -1,0 +1,25 @@
+ul{
+    list-style-type: none;
+}
+body{
+    background-color: #333;
+    color: #ddd;
+}
+
+details{
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+/* aca dependiendo si abro o lo dejo cerrado cambio las propiedades de ese elemento. */
+details[open]{
+    border: 1px solid #ddd;
+    background-color: #555;
+}
+
+summary{
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    padding: 9px;
+}

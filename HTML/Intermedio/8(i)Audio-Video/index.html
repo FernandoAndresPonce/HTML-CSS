@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio & video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- el controls para que el video tenga lo controles , como pausar, play,etc
+     Autoplay para que cuando cargemos la pagina automaticamente se carge el video y se reproduzca
+     Muted, para cuando cargemos la pagina se siga autoreproduciendo el video
+     y el loop ,  para que haga bucle -->
+    <video controls autoplay muted loop src="el nombre del archivo, en video">
+        <track src="ponemos los subtitulos archivo.vtt captions.vtt" default kind="captions" srclang="es" label="Espanol (LatinoAmerica)">
+        <!-- todo esto debemos poner para que aparezca con subtitulos en espanol -->
+    </video>
+    <!-- lo mismo con audio -->
+    <audio controls autoplay muted src="el nombre del archivo, en video"></audio>
+</body>
+</html>
