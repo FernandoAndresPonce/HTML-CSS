@@ -9,7 +9,7 @@
 }
 
 :root{
-    --bg-color: #121212;
+    --bg-color: #111111;
     --second-bg-color: #202020;
     --text-color: #ffffff;
     --main-color: rgb(38, 67, 67);
@@ -393,10 +393,13 @@ header.sticky{
 
 .portfolio{
     background: var(--bg-color);
+    text-align: center;
+
+    
 }
 
 .mid-text h2{
-    margin-top: 15px;
+    margin-top: -30px;
     font-size: var(--h2-font);
 }
 
@@ -411,13 +414,16 @@ header.sticky{
 /* ver esto que sucede */
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: center;
     gap: 2rem;
-    margin-top: 2.2rem;
+    margin: 2.2rem auto; /* Centra horizontalmente el contenido */
+    height: 40vh; /* Cambiado a vh para que sea un 40% de la altura de la ventana */
+    width: 40%;  
 }
 
 .row-img{
+    
     overflow: hidden;
     border-radius: 1.7rem;
 }
@@ -431,15 +437,21 @@ header.sticky{
     cursor: pointer;
 }
 
+
+
 .row-img img:hover{
     transform: scale(1.1);
 }
+
+
+
 
 .row{
     background:var(--second-bg-color);
     border-radius: 1.7rem;
     padding: 0px 0px 5px 0px;
     transition: all .7s ease;
+    
 }
 
 .row-in{
@@ -476,6 +488,28 @@ header.sticky{
 
 .row-right a:hover{
     transform: scale(1.1) translate3d(11px,0 ,0);
+}
+
+
+.carousel-controls {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+button.prev, button.next {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1; /* Asegura que los botones estén encima */
+    margin: 0 -10px; 
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgb(129, 186, 181);
 }
 
 .contact{

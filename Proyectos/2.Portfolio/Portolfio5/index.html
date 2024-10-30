@@ -67,7 +67,7 @@
             
             <div class="h-btn">
                 <a href="#portfolio" class="btn1">
-                    Mis Proyectos
+                    Mi Proyecto
                     <i class="ri-arrow-right-s-line"></i>
                 </a>
 
@@ -122,8 +122,8 @@
                     <li class="service-item">
                         <div class="service-content-box">
                             <h4 class="h4 service-item-title">Herramientas</h4>
-                            <img src="img/iconos de programa/visualCode.png" alt="Visual Studio icon" width="40" title="Visual Studio Code">
                             <img src="img/iconos de programa/visualCommunity.png" alt="Visual Studio Community icon" width="40" title="Visual Studio Community">
+                            <img src="img/iconos de programa/visualCode.png" alt="Visual Studio icon" width="40" title="Visual Studio Code">
                             <img src="img/iconos de programa/ssms.webp" alt="SQL Server Management Studio icon" width="40" title="SQL Server Management Studio">
                             <img src="img/iconos de programa/postman.png" alt="Postman" width="40" title="Postman">
                         </div>
@@ -161,7 +161,7 @@
                     </li>
 
                   
-                    <li class="service-item">
+                    <li class="service-item" style="margin-top: -15px;">
                         <div class="service-content-box">
                             <h4 class="h4 service-item-title">Certificado C# Nivel 1 <br> [Microsoft .NET]</h4>
                             <a href="img/certificadosPDF/CertificadoCNivel1Fernando Ponce.pdf" download>
@@ -169,8 +169,8 @@
                             </a>
                         </div>
                     </li>
-                    <li class="service-item">
-                        <div class="service-content-box">
+                    <li class="service-item" style="margin-top: -15px;">
+                        <div class="service-content-box" >
                             <h4 class="h4 service-item-title">Certificado C# Nivel 2 <br> [.NET + SQL]</h4>
                             <a href="img/certificadosPDF/CertificadoCNivel2FernandoPonce.pdf" download>
                                 <img src="img/certificados jpg/CertificadoCSharpNivel2FernandoPonce.jpg" alt="Certificado C# Nivel 2" width="100" title="Certificado C# Nivel 2">
@@ -202,54 +202,30 @@
     <section class="portfolio" id="portfolio">
         <div class="mid-text">
             <a href="#" class="h-line">
-                <h2>&lt/ Mis <span>Proyectos  &gt</span> </h2>
+                <h2>&lt/ Mi <span>Proyecto &gt</span> </h2>
             </a>
         </div>
-
+    
         <div class="portfolio-content">
-            <div class="row">
-                <div class="row-img">
-                    <img src="img/p1.jpg" >
-                </div>
-                <div class="row-in">
-                    <div class="row-left">
-                        <h3>En Construccion</h3>
-                        <h6>-Proximamente- </h6>
-                        <a href="https://github.com/FernandoAndresPonce" target="_blank"><i class='bx bxl-github' ></i></a>
+            <div class="carousel-controls">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="row">
+                    <div class="row-img">
+                        <img id="carouselImage" src="img/p1.jpg" alt="Proyecto 1">
                     </div>
-                    <div class="row-right">
-                        <a href="#"><i class="ri-arrow-right-line"></i></a>
+                    <div class="row-in">
+                        <div class="row-left">
+                            <h3>En Construccion</h3>
+                            <h6>-Proximamente-</h6>
+                            <a href="https://github.com/FernandoAndresPonce" target="_blank"><i class='bx bxl-github'></i></a>
+                        </div>
+                        <div class="row-right">
+                            <a href="#"><i class="ri-arrow-right-line"></i></a>
+                        </div>
                     </div>
                 </div>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
             </div>
-            <div class="row">
-                <div class="row-img">
-                    <img src="img/p2.jpg" >
-                </div>
-                <div class="row-in">
-                    <div class="row-left">
-                        <h3>En Construccion</h3>
-                        <h6>-Proximamente- </h6>
-                    </div>
-                    <div class="row-right">
-                        <a href="#"><i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="row">
-                <div class="row-img">
-                    <img src="img/p3.jpg" >
-                </div>
-                <div class="row-in">
-                    <div class="row-left">
-                        <h3>En Construccion</h3>
-                        <h6>-Proximamente- </h6>
-                    </div>
-                    <div class="row-right">
-                        <a href="#"><i class="ri-arrow-right-line"></i></a>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
         

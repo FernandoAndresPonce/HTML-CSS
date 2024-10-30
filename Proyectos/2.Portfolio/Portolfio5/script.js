@@ -26,3 +26,25 @@ var typed = new Typed(".input", {
     typeSpeed: 120,       // La velocidad a la que se escribe el texto (ajusta este valor para ralentizar la escritura)
     loop: true,
 });
+
+
+//carousel
+let currentSlide = 0;
+const images = [
+    'img/p1.jpg',
+    'img/p2.jpg',
+    // Agrega más imágenes según sea necesario
+];
+
+function moveSlide(direction) {
+    currentSlide += direction;
+
+    if (currentSlide < 0) {
+        currentSlide = images.length - 1; // Regresa al último slide
+    } else if (currentSlide >= images.length) {
+        currentSlide = 0; // Regresa al primer slide
+    }
+
+    const carouselImage = document.getElementById('carouselImage');
+    carouselImage.src = images[currentSlide]; // Cambia la imagen
+}
