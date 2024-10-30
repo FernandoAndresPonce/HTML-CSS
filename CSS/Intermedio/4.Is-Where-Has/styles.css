@@ -1,0 +1,12 @@
+label:has(input:valid){
+    color: green;
+    
+}
+
+label:has(input:invalid){
+    color: red;
+}
+
+label{
+    font-weight: bold;
+}

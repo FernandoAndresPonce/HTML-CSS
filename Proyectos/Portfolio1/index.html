@@ -1,29 +1,329 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>PortFolio</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
+<!-- ------------------------------------------------------------ -->
+    <!-- box-icons-link https://boxicons.com/ >>> ir a git-hub >>> copiar este link el de abajo -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <body>
+    <!-- remix-icons-link, https://remixicon.com/ lo mismo que arriba -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 
-        <div class="fondoPrincipal">
-            <!-- <div class="imagen">
-            </div> -->
-            <div class="imagenPrincipal">
-            </div>
-        </div> 
+    <!-- google-fonts-link, lo mismo que arriba, (luego deberia acomodarlo en una carpeta!!!) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Righteous&family=Syne:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- ------------------------------------------------------------ -->
+</head>
 
-        <div class="fondoSecundario">
+<!-- ------------------------------------------------------------ -->
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="img/logo.png" alt="logoPersonal"> </a>
+        <!-- <a href="#" class="h-line">
+            <i class="ri-shining-2-line"></i>
+            <span>Fer</span>
+        </a> -->
+        <ul class="menulist">
+            <a href="#home" class="Active">&lt Principal &gt</a>
+            <a href="#about"> &lt Sobre Mi &gt </a>
+            <!-- <a href="#services">Services</a> -->
+            <a href="#portfolio">&lt Portfolio &gt</a>
+            <a href="#contact">&lt Contacto &gt</a>
+        </ul>
+
+        <div class="menu-right">
+            <a href="#" class="menu-btn">
+                <span>Lets talk</span>
+                <!-- ir a remixicon y copiar la classe de la imagen que querramos. -->
+                <i class="ri-message-3-line"></i>
+            </a>
+
+            <!-- buscar en la pagina box icons>> menu>> ir al font de la imagen >> copiar la class -->
+            <div class="bx bx-menu" id="menu-ico"></div>
         </div>
-
-        <div class="fondoPrincipal">
-        </div>
-
-
+    </header>
             
 
-    </body>
+    <!-- ------------------------------------------------------------ -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <a href="#" class="h-line">
+                <i class="ri-shining-2-line"></i>
+                <span>Fernando Ponce</span>
+            </a>
+            <h1>Analista QA y<br> <span class="input"></span></h1>
+            <!-- <h4>With +5 years of experience</h4> -->
+            <div class="social-icons">
+                <a href="#"><i class="ri-dribbble-line"></i></a>
+                <a href="#"><i class="ri-behance-line"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-pinterest-line"></i></a>
+            </div>
+            
+            <div class="h-btn">
+                <!-- <a href="#" class="btn1">
+                    Mi Trabajo
+                    <i class="ri-arrow-right-s-line"></i>
+                </a> -->
 
+                <a href="#" class="btn2">
+                    Descargar CV
+                    <i class="ri-download-2-line"></i>
+                </a>
+
+            </div>
+        </div>
+    </section>
+ <!-- ------------------------------------------------------------ -->
+
+    <!--about -->
+    <section class="about" id="about"> 
+        <div class="about-img">
+            <img src="img/about.png">
+        </div>
+        <div class="about-text">
+            <a href="#" class="h-line">
+                <!-- <i class="ri-shining-2-line"></i> -->
+                <span>&lt/ Acerca de Mi &gt</span>
+            </a>
+            <h2>Mas <span>Acerca de Mi</span></h2>
+            <h5>Estoy listo para aportar mi entusiasmo y habilidades analíticas a un equipo dinámico. Mi capacidad de aprendizaje rápido, dedicación y tolerancia a la frustración son activos que me impulsan a abrazar nuevos desafíos. Estoy abierto a oportunidades que me permitan crecer y contribuir con innovación</h5>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam vel atque ullam tempora! Id, ducimus. A rerum, commodi alias ipsum corporis veniam sit sunt tenetur dolorum, autem ab natus! <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates inventosantium quibusdam, obcaecati explicabo. Eos, omnis.</p> -->
+
+            <!-- ---------------------------------- -->
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                <p class="tab-links" onclick="opentab('education')">Educacion</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li class="service-item">
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Lenguajes de programación</h4>
+                            <img src="img/iconos de programa/Csharp.png" alt="C# icon" width="40" title="C Sharp">
+                            <img src="img/iconos de programa/type.png" alt="Typescript icon" width="40" title="TypeScript">
+                            <img src="img/iconos de programa/python.png" alt="Python icon" width="40" title="Python">
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Framework y Librerías</h4>
+                            <img src="img/iconos de programa/net.png" alt=".NET icon" width="40" title=".Net">
+                         
+                            <img src="img/iconos de programa/playwright.png" alt="Playwright icon" width="40" title="Playwright">
+                            <img src="img/iconos de programa/devicon--bootstrap.png" alt="Bootstrap icon" width="40" title="Bootstrap">
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Herramientas</h4>
+                            <img src="img/iconos de programa/visualCode.png" alt="Visual Studio icon" width="40" title="Visual Studio Code">
+                            <img src="img/iconos de programa/visualCommunity.png" alt="Visual Studio Community icon" width="40" title="Visual Studio Community">
+                            <img src="img/iconos de programa/ssms.webp" alt="	
+                            SQL Server Management Studio icon" width="40" title="	
+                            SQL Server Management Studio">
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Base de Datos</h4>
+                            <img src="img/iconos de programa/sqlServer.png" alt="SQL Server icon" width="40" title="Sql Server">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li class="service-item">
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Certificado C# Nivel 1 </h4>
+                            <a href="img/certificadosPDF/CertificadoCNivel1Fernando Ponce.pdf" download>
+                            <img src="img/certificados jpg/CertificadoCSharpNivel1FernandoPonce.jpg" alt="Certificado C# Nivel 1 Fernando Ponce " width="100" title="Certificado C# Nivel 1 Fernando Ponce">
+                        </a>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Certificado C# Nivel 2</h4>
+                            <a href="img/certificadosPDF/CertificadoCNivel2FernandoPonce.pdf" download>
+                            <img src="img/certificados jpg/CertificadoCSharpNivel2FernandoPonce.jpg" alt="Certificado C# Nivel 2" width="100" title="Certificado C# Nivel 2">
+                        </a>
+                        </div>
+                    </li>
+
+                    <li class="service-item">
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Certificado Playwright - Typescript</h4>
+                            <a href="img/certificadosPDF/Certificado Playwright Typescript - Fernando Ponce.pdf" download>
+                                <img src="img/certificados jpg/CertificadoPlaywrightTypescriptFernandoPonce.jpg" alt="Certificado Playwright - Typescript" width="100" title="Certificado Playwright - Typescript">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="tab-contents" id="experience">
+                <ul>
+                    <li>
+                        <span>2016</span><br>Designing Web
+                    </li>
+                    <li>
+                        <span>2017</span><br>Designing Web
+                    </li>
+                    <li>
+                        <span>2019</span><br>Designing Web
+                    </li>
+                </ul>
+            </div> -->
+           
+
+
+
+  <!-- ---------------------------------- -->
+            <div class="h-btn">
+                <a href="#" class="btn1">
+                    Contrateme.
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
+
+                <a href="#" class="btn2">
+                    Descargar CV
+                    <i class="ri-download-2-line"></i>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="mid-text">
+            <a href="#" class="h-line">
+                <!-- <i class="ri-shining-2-line"></i> -->
+                <span>&lt/ Portfolio &gt</span>
+            </a>
+            <h2>Mis Trabajos <span>Proyectos</span> </h2>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="row">
+                <div class="row-img">
+                    <img src="img/p1.jpg" >
+                </div>
+                <div class="row-in">
+                    <div class="row-left">
+                        <h3>En Construccion</h3>
+                        <h6>-Proximamente- </h6>
+                    </div>
+                    <div class="row-right">
+                        <a href="#"><i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="img/p2.jpg" >
+                </div>
+                <div class="row-in">
+                    <div class="row-left">
+                        <h3>En Construccion</h3>
+                        <h6>-Proximamente- </h6>
+                    </div>
+                    <div class="row-right">
+                        <a href="#"><i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="img/p3.jpg" >
+                </div>
+                <div class="row-in">
+                    <div class="row-left">
+                        <h3>En Construccion</h3>
+                        <h6>-Proximamente- </h6>
+                    </div>
+                    <div class="row-right">
+                        <a href="#"><i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+     <!-- Contactame  -->
+      <section class="contact" id="contact">
+        <div class="contact-main">
+            <a href="#" class="h-line">
+                <i class="ri-shining-2-line"></i>
+                <span>Contacto!</span>
+            </a>
+            <h2>Got a Project <span>Lets talk</span> </h2>
+            <div class="email">   
+                <p>Email:</p>
+                <h6>poncefernandoandres@gmail.com</h6>
+            </div>
+            <div class="num">
+                <p>Telefono:</p>
+                <h6>0341-5786186</h6>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="ri-dribbble-line"></i></a>
+                <a href="#"><i class="ri-behance-line"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-pinterest-line"></i></a>
+            </div>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Direccion de correo..." required>
+            <textarea name="" id="" rows="10" cols="10" placeholder="Write Message here..." required></textarea>
+            <input type="submit" value="Submit Now" class="submit-btn">
+        </form>
+      </section>
+
+     <div class="footer">
+        <div class="copyright">
+            <p>@Copyright Fernando Ponce All Right Reserved</p>
+        </div>
+        <a href="#home" class="scroll-top">
+            <i class="ri-arrow-up-s-line"></i>
+        </a>
+     </div>
+     <!-- https://github.com/mattboldt/typed.js, copia esa libreria para animation -->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- js files -->
+    <script src="script.js"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+</body>
 </html>

@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+
+.fondoPrincipal{
+    width: 100%;
+    height: 584px;
+    /* background-color: #030d39 ; */
+    background: linear-gradient(black , rgb(43, 1, 48) 80%);
+
+}
+
+.fondoSecundario{
+    width: 100%;
+    height: 584px;
+    background: url("imagen/programand.jpg") top / cover fixed;
+
+
+
+}
+/* .imagen{
+    background: url("imagen/diseno-salpicaduras-acuarela-color-arcoiris-0307_1048-19245.avif");
+    width: 50%;
+    height: 400px;
+    background-position: top;
+    background-size: cover;
+    mix-blend-mode: color-burn;
+    
+    
+    margin: auto;
+} */
+
+/* .imagenPrincipal{
+    background: url("imagen/fer-transformed.png");
+    width: 200px;
+    height: 400px;
+    background-position: top;
+    background-size: cover;
+    position: relative ;
+    top: 184px;
+    left: 120px;
+    margin: auto;
+    
+    
+
+} */

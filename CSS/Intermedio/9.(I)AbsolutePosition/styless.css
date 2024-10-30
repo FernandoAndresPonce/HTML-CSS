@@ -1,0 +1,39 @@
+.contenedor{
+    border: 2px solid #000;
+    margin: 30px 40px;
+    position: relative;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #efefef;
+    text-align: center;
+
+   
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color:#fff;
+}
+
+.box--blue{
+    background-color: blue;
+    /* pondria esta caja encima de la siguiente, la roja en este caso, quiere decir que no ocupa lugar, a diferencia del relative, que se mueve la caja pero su lugar esta ahi reservado, para cuando quiere regresar.
+    y absolute el punto de referencia que tiene es el html,peero si a la class contenedor le damos relative, el punto de partida va a ser el contenendor */
+    position: absolute;
+
+    /* y asi podemos centrar el elemento. */
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.box--red{
+    background-color: red;
+}

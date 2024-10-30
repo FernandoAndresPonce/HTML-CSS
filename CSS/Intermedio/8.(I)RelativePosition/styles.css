@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    background-color: #ededed;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: #ededed;
+    /* La posicion relative, le dice a la caja que se mantenga en su posicion, pero tenemos la posibilidad de moverla hacia donde deseemos. */
+    position: relative;
+}
+
+
+.box--blue{
+    background-color: blue;
+       /* y en cuestiones de posicionamiento siempre le dara mas prioridad a top y left. */
+    top:  70px;
+    left: 50px;
+/* esta propiedad nos da la posibilidad de mover el elemento del eje z, seria a"adelantar o superponer el elemento" */
+    z-index: 10;
+
+
+}
+
+.box--red{
+    background-color: red;
+
+}

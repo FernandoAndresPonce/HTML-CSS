@@ -1,0 +1,59 @@
+h1{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+ /* Cuando se pasa el mouse por ese elemento cambia el estado. */
+h1:hover{
+    color: red;
+}
+
+h2{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+h2:hover{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Esta cambiaria cuando le Damos Click */
+h1:active{
+    color: blueviolet;
+}
+
+/* SELECCIONANDO EL PRIMER li */
+li:first-child{
+    color: red;
+}
+
+/* SELECCIONADO EL SEGUNDO LI */
+li:nth-child(3){
+    color: greenyellow;
+}
+
+/* SELECCIONADO EL ULTIMO LI */
+li:last-child{
+    color: blue;
+}
+
+/* SELECCIONADO ELemento INTERCALADOS LI */
+/* li:nth-child(2n){
+    color: greenyellow;
+} */
+
+/* EVITANDO SELECCION */
+.lista li:not(.excluir){
+    color: blue;
+}
+
+/* IMPORTANTE VALIDAR DE DIFERENTES COLORES. */
+input:invalid{
+    color: red;
+}
+
+input:valid{
+    color: green;
+}

@@ -1,0 +1,35 @@
+
+/* SELECTOR POR ATRIBUTO */
+
+img[src="fer.jpg"] {
+    width: 100%;
+    height: 600px;
+}
+
+/* aca le estoy diciendo que todas las imagenes que TERMINEN jpg o otra cosa, le voy a dar esas propiedades, y le ponemos el $ . serian TERMINA CON EL $, 
+y las imagenes  para decir que EMPIECEN CON usamos ^ src^="palabra"*/
+/* img[src$="jpg"] {
+    width: 100%;
+    height: 600px;
+} */
+
+/* SELECTOR hermano ADYACENTE */
+
+h1 + p {
+    color: red;
+}
+
+
+h1 + p + p {
+    color: red;
+}
+
+/* aca digo que le doy una propiedad al elemento que esta despues de h1 p */
+
+/* SELECTOR DE HERMANOS GENERALES */
+
+h1 ~ p {
+    color: blue;
+}
+
+/* a diferencia con el anterior es que se lo da solamente al hermano directo , y de esta manera le da a todos los p siguiente */

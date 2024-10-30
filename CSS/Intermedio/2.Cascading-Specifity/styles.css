@@ -1,0 +1,21 @@
+/* Distinto niveles de Especificidad 0,0,0 */
+
+/* 0,0,1 */
+h1{
+    color: red;
+}
+
+/* 0,1,0 */
+.titulo {
+    color: blue;
+}
+
+/* 1,0,0 */
+#titulo{
+    color: green;
+}
+
+/* !!!!!!Entonces lo niveles de casdaca, son !IMPORTANT, style="", <styles> o todo lo que define el programador, user y por ultimo navegador. */
+
+
+

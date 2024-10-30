@@ -1,0 +1,19 @@
+h1::first-letter{
+    color:blue;
+    font-size: 2em;
+}
+
+div::first-line{
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+h1::selection{
+    background-color: green;
+    color: white;
+}
+
+input::placeholder{
+    color:blueviolet;
+}
